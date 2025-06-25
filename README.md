@@ -48,8 +48,40 @@ npm run lint
 npm run lint:fix
 
 
-6.now we will configure prettier
-6.run prettier
+6.now we will configure prettier run prettier
 npm install -D eslint-plugin-prettier
 npm run format
+
+
+
+## install tailwind
+npm install -D tailwindcss @tailwindcss/postcss
+add : @import "tailwindcss"; on index.css file 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
