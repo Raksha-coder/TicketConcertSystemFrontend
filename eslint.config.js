@@ -44,7 +44,7 @@ export default defineConfig([
   {
     rules: {
       ...prettierConfig.rules,
-      'react/react-in-jsx-scope': 'off', 
+      'react/react-in-jsx-scope': 'off',
     },
   },
 ]);
