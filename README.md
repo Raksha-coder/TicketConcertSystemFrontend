@@ -16,26 +16,22 @@ npm install react-router-dom
 npx eslint --init
 
 3. Added configuration in program.cs
-  "scripts": {
+   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write ."
   },
-
-4.create a .eslintignore file 
-  #.eslintignore
-  build/
-  node_modules/
-  dist/
-  coverage/
 
 
 5.run eslint in any of your file
-npx eslint yourfile.js 
+npm run lint
+npm run lint:fix
 
 
-6.now we will configure prettier
-
+6.run prettier
+npm install -D eslint-plugin-prettier
+npm run format
 
