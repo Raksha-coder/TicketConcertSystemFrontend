@@ -26,7 +26,7 @@ export default defineConfig([
     },
     settings: {
       react: {
-        version: 'detect', // 👈 Add this line
+        version: 'detect', 
       },
     },
     plugins: {

@@ -1,7 +1,16 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+  "compilerOptions": {
+    "allowJs": true,          /* Allow JavaScript files to be compiled. */
+    "jsx": "react-jsx",       /* Specify JSX code generation: 'preserve', 'react-native', 'react', 'react-jsx', 'react-jsxdev'. */
+    "esModuleInterop": true,  /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+    "skipLibCheck": true,     /* Skip type checking of all declaration files (*.d.ts). */
+    "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+    "resolveJsonModule": true /* Allows importing modules with a '.json' extension, which will be emitted as CommonJS modules. */
+  },
+  "include": [
+    "src",
+    // Make sure your JSX files are included in the compilation
+    "src/**/*.js",
+    "src/**/*.jsx"
   ]
 }
