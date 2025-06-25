@@ -12,3 +12,7 @@ npm install react-router-dom
 ## Install ESLint and preetier : 
 npm install -D eslint prettier eslint-plugin-react eslint-config-prettier eslint-plugin-react-hooks @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
+run eslint in any of your file
+npx eslint yourfile.js 
+
+
