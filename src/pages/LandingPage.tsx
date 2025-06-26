@@ -1,5 +1,5 @@
 import React from 'react'
-import Loading from '../Components/Loading'
+import Loading from '../components/Loading'
 const LandingPage = () => {
   return (
     <div>

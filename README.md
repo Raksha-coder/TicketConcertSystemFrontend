@@ -59,6 +59,36 @@ npm install -D tailwindcss @tailwindcss/postcss
 add : @import "tailwindcss"; on index.css file 
 
 
+## install axios and crypto.js
+npm install crypto-js
+npm i axios 
+
+## install toaster
+npm install react-toastify
+import { toast } from 'react-toastify';
+
+toast.success('User Registered Successfully!');
+toast.error('Something went wrong!');
+toast.info('Loading...');
+toast.warning('Are you sure?');
+
+
+Optional Configuration
+
+<ToastContainer 
+  position="top-right"
+  autoClose={3000}
+  hideProgressBar={false}
+  newestOnTop={false}
+  closeOnClick
+  pauseOnFocusLoss
+  draggable
+  pauseOnHover
+  theme="colored"
+/>
+
+
+
 
 
 
