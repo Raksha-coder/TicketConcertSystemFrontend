@@ -88,7 +88,8 @@ Optional Configuration
 />
 
 
-
+## install react icons
+npm install react-icons
 
 
 

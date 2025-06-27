@@ -3,12 +3,10 @@ import axiosInstance from './axiosInstance';
 import { encryptData } from '../utils/cryptoUtil';
 import { UserRegisterRequest } from '../models/UserRegisterRequest';
 
-const COMMON = "http://localhost:5163/";
-const POST_REGISTER = COMMON +"api/User/register";
-const POST_Login = COMMON+"api/User/login";
+const POST_REGISTER = "api/User/register";
+const POST_Login = "api/User/login";
 
 export const registerUser = async (data:UserRegisterRequest) => {
-  debugger;
   const response = await axiosInstance.post(POST_REGISTER , data);
   return response.data;
 };

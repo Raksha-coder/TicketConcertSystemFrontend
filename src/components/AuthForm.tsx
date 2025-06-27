@@ -44,8 +44,10 @@ const AuthForm = () => {
 
             } else {
                 response = await loginUser(email, password);
-                  if (response.Success) {
+                debugger;
+                  if (response.success) {
                     notifySuccess("You are successfully Login ");
+                    localStorage.setItem("accessToken",response.data);
                     navigate("/dashboard");
 
                 } else {
@@ -83,6 +85,7 @@ const AuthForm = () => {
                         required
                         className="w-full px-4 py-2 border border-gray-300 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-200"
                         placeholder="Enter your fullname"
+                         autoComplete="name"
                     />
                 </div>
                   : null}
@@ -97,6 +100,7 @@ const AuthForm = () => {
                         required
                         className="w-full px-4 py-2 border border-gray-300 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-200"
                         placeholder="your.email@example.com"
+                        autoComplete="username"
                     />
                 </div>
                 <div>
@@ -109,6 +113,7 @@ const AuthForm = () => {
                         required
                         className="w-full px-4 py-2 border border-gray-300 text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition duration-200"
                         placeholder="********"
+                         autoComplete="current-password"
                     />
                 </div>
 
