@@ -43,7 +43,6 @@ const CreateVenue = () => {
   };
 
   return (
-    <div >
       <div>
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Create New Venue</h2>
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -119,7 +118,6 @@ const CreateVenue = () => {
           </div>
         )}
       </div>
-    </div>
   );
 };
 
